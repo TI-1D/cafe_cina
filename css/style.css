@@ -1,0 +1,23 @@
+body {
+  font-family: cursive, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida";
+}
+
+.main-color {
+  background-color: rgb(0, 0, 0, 1) !important;
+}
+
+a span {
+  color: rgb(192, 22, 22);
+}
+
+.banner {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-image: url("../image/gambar.png");
+  background-size: cover;
+  background-position: center;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+}
