@@ -1,0 +1,68 @@
+body {
+  font-family: cursive, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida";
+}
+
+.main-color {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+a span {
+  color: rgb(226, 40, 40);
+  font-weight: bolder;
+}
+
+h3 span {
+  color: rgb(226, 40, 40);
+}
+
+.banner {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-image: url("../../image/or\ idk.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.animasi:hover {
+  transform: scale(1.1);
+}
+
+.card-title {
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.animasi {
+  transition: 0.3s;
+  font-size: small;
+}
+
+.melayani {
+  width: 80px;
+  height: 80px;
+  border: solid #fff 2px;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.content-subs {
+  background-color: #fff;
+}
+
+h5 span {
+  color: rgb(226, 40, 40);
+}
+
+.bg-btn {
+  background-color: rgb(226, 40, 40);
+  color: #fff;
+  border: 100%;
+  border-color: #fff;
+}
+
+.bg-btn:hover {
+  background-color: black;
+  color: rgb(226, 40, 40);
+  border-color: rgb(226, 40, 40);
+}

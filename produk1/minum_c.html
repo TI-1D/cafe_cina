@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cafe China | Produk</title>
+    <!-- icon -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../dist/css/lightbox.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <a class="navbar-brand" href="#">Cafe<span> China</span>.</a>
+          <ul class="navbar-nav ms-auto d-flex gap-3">
+            <li class="nav-item me-3">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown me-3">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Product
+              </a>
+              <ul
+                class="dropdown-menu bg-black"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item nav-link btn-nav" href="Chinese.html"
+                    >Food</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item nav-link btn-nav active" href="#"
+                    >Drink</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="../promo.html">Promo</a>
+            </li>
+            <li class="nav-item me-3">
+              <a
+                class="nav-link"
+                href="../keranjang.html"
+                tabindex="-1"
+                aria-disabled="true"
+                ><i class="bi bi-cart2"></i>Cart</a
+              >
+            </li>
+            <li class="nav-item me-3">
+              <a
+                class="nav-link"
+                href="../login.html"
+                tabindex="-1"
+                aria-disabled="true"
+                ><i class="bi bi-person-fill"></i>Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner -->
+    <div class="container-fluid banner-produk">
+      <div class="container">
+        <div class="row">
+          <h3 class="text-light display-6 mx-3 mt-2">
+            Selamat Datang <br />di Cafe<span> China</span>
+          </h3>
+          <h5 class="text-light opacity-75 mx-3 mt-2">
+            Ayo kunjungi cafe dengan nuansa china,
+            <br class="d-none d-md-block" />
+            kapan lagi nongki serasa di china
+          </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produk -->
+    <div class="container-fluid py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Kategori -->
+          <div class="col-md-4 col-lg-3 mb-5">
+            <h5>Category</h5>
+            <ul class="list-group mt-4">
+              <li class="list-group-item btn-produk">
+                <a
+                  class="text-dark"
+                  style="text-decoration: none"
+                  href="../minum.html"
+                  >All</a
+                >
+              </li>
+              <li class="list-group-item btn-produk active-danger">Chinese</li>
+              <li class="list-group-item btn-produk">
+                <a
+                  class="text-dark"
+                  style="text-decoration: none"
+                  href="minum_l.html"
+                  >Local</a
+                >
+              </li>
+              <li class="list-group-item btn-produk">
+                <a
+                  class="text-dark"
+                  style="text-decoration: none"
+                  href="minum_j.html"
+                  >Japanese</a
+                >
+              </li>
+              <li class="list-group-item btn-produk">
+                <a
+                  class="text-dark"
+                  style="text-decoration: none"
+                  href="minum_w.html"
+                  >Western</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Produk -->
+          <div class="col-md-8 col-lg-9">
+            <h5 class="text-center">Chinese</h5>
+            <div class="row">
+              <div class="col-sm-6 col-lg-4 mt-3 mb-2">
+                <div class="card">
+                  <a
+                    href="img/Chinese/Bubble Thai Tea.jpg"
+                    data-lightbox="kopi"
+                    data-title="Bubble Thai Tea"
+                  >
+                    <img
+                      src="img/Chinese/Bubble Thai Tea.jpg"
+                      class="card-img-top"
+                      alt="404"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-danger">
+                      <strong>Bubble Thai Tea</strong>
+                    </h5>
+                    <p class="card-text text-center">
+                      Zǎo shang hǎo zhōng guó! Xiàn zài wǒ yǒu bing chilling Wǒ
+                      hěn xǐ huān bing chilling Dàn shì "sù dù yǔ jī qíng jiǔ"
+                      bǐ bing chilling
+                    </p>
+                    <h5 class="text-center text-danger mb-3">Rp.18.000</h5>
+                    <div class="dropdown">
+                      <a
+                        class="btn btn-produk dropdown-toggle w-100"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        More
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="detail_1.html"
+                            >Details</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Add To Cart</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 mt-3 mb-2">
+                <div class="card">
+                  <a
+                    href="img/Chinese/Milk Tea.jpg"
+                    data-lightbox="kopi"
+                    data-title="Milk Tea"
+                  >
+                    <img
+                      src="img/Chinese/Milk Tea (Square).jpg"
+                      class="card-img-top"
+                      alt="404"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-danger">
+                      <strong>Milk Tea</strong>
+                    </h5>
+                    <p class="card-text text-center">
+                      Zǎo shang hǎo zhōng guó! Xiàn zài wǒ yǒu bing chilling Wǒ
+                      hěn xǐ huān bing chilling Dàn shì "sù dù yǔ jī qíng jiǔ"
+                      bǐ bing chilling
+                    </p>
+                    <h5 class="text-center text-danger mb-3">Rp.18.000</h5>
+                    <div class="dropdown">
+                      <a
+                        class="btn btn-produk dropdown-toggle w-100"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        More
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="detail_1.html"
+                            >Details</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Add To Cart</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 mt-3 mb-2">
+                <div class="card">
+                  <a
+                    href="img/Chinese/Krisan Tea.jpg"
+                    data-lightbox="kopi"
+                    data-title="Krisan Tea"
+                  >
+                    <img
+                      src="img/Chinese/Krisan Tea (Square).jpg"
+                      class="card-img-top"
+                      alt="404"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-danger">
+                      <strong>Krisan Tea</strong>
+                    </h5>
+                    <p class="card-text text-center">
+                      Zǎo shang hǎo zhōng guó! Xiàn zài wǒ yǒu bing chilling Wǒ
+                      hěn xǐ huān bing chilling Dàn shì "sù dù yǔ jī qíng jiǔ"
+                      bǐ bing chilling
+                    </p>
+                    <h5 class="text-center text-danger mb-3">Rp.18.000</h5>
+                    <div class="dropdown">
+                      <a
+                        class="btn btn-produk dropdown-toggle w-100"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        More
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="detail.html"
+                            >Details</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Add To Cart</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 mt-3 mb-2">
+                <div class="card">
+                  <a
+                    href="img/Chinese/boba1.jpg"
+                    data-lightbox="kopi"
+                    data-title="xi Boba"
+                  >
+                    <img
+                      src="img/Chinese/boba1.jpg"
+                      class="card-img-top"
+                      alt="404"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-danger">
+                      <strong>XI Boba</strong>
+                    </h5>
+                    <p class="card-text text-center">
+                      Zǎo shang hǎo zhōng guó! Xiàn zài wǒ yǒu bing chilling Wǒ
+                      hěn xǐ huān bing chilling Dàn shì "sù dù yǔ jī qíng jiǔ"
+                      bǐ bing chilling
+                    </p>
+                    <h5 class="text-center text-danger mb-3">Rp.18.000</h5>
+                    <div class="dropdown">
+                      <a
+                        class="btn btn-produk dropdown-toggle w-100"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        More
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="detail_1.html"
+                            >Details</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Add To Cart</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 mt-3 mb-2">
+                <div class="card">
+                  <a
+                    href="img/Chinese/Plum Juice.jpg"
+                    data-lightbox="kopi"
+                    data-title="Plum Juice"
+                  >
+                    <img
+                      src="img/Chinese/Plum Juice (Square).jpg"
+                      class="card-img-top"
+                      alt="404"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-danger">
+                      <strong>Plum Juice</strong>
+                    </h5>
+                    <p class="card-text text-center">
+                      Zǎo shang hǎo zhōng guó! Xiàn zài wǒ yǒu bing chilling Wǒ
+                      hěn xǐ huān bing chilling Dàn shì "sù dù yǔ jī qíng jiǔ"
+                      bǐ bing chilling
+                    </p>
+                    <h5 class="text-center text-danger mb-3">Rp.18.000</h5>
+                    <div class="dropdown">
+                      <a
+                        class="btn btn-produk dropdown-toggle w-100"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        More
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="detail_1.html"
+                            >Details</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Add To Cart</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 mt-3 mb-2">
+                <div class="card">
+                  <a
+                    href="img/Chinese/Soy Milk.jpg"
+                    data-lightbox="kopi"
+                    data-title="Soy Milk"
+                  >
+                    <img
+                      src="img/Chinese/Soy Milk (Square).jpg"
+                      class="card-img-top"
+                      alt="404"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-danger">
+                      <strong>Soy Milk</strong>
+                    </h5>
+                    <p class="card-text text-center">
+                      Zǎo shang hǎo zhōng guó! Xiàn zài wǒ yǒu bing chilling Wǒ
+                      hěn xǐ huān bing chilling Dàn shì "sù dù yǔ jī qíng jiǔ"
+                      bǐ bing chilling
+                    </p>
+                    <h5 class="text-center text-danger mb-3">Rp.18.000</h5>
+                    <div class="dropdown">
+                      <a
+                        class="btn btn-produk dropdown-toggle w-100"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        More
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="detail_1.html"
+                            >Details</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Add To Cart</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 mt-3 mb-2">
+                <div class="card">
+                  <a
+                    href="img/Chinese/mai-dongfoto-kian.jpeg"
+                    data-lightbox="kopi"
+                    data-title="Mai Dong"
+                  >
+                    <img
+                      src="img/Chinese/mai-dongfoto-kian1.jpeg"
+                      class="card-img-top"
+                      alt="404"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-danger">
+                      <strong>Mai Dong</strong>
+                    </h5>
+                    <p class="card-text text-center">
+                      Zǎo shang hǎo zhōng guó! Xiàn zài wǒ yǒu bing chilling Wǒ
+                      hěn xǐ huān bing chilling Dàn shì "sù dù yǔ jī qíng jiǔ"
+                      bǐ bing chilling
+                    </p>
+                    <h5 class="text-center text-danger mb-3">Rp.18.000</h5>
+                    <div class="dropdown">
+                      <a
+                        class="btn btn-produk dropdown-toggle w-100"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        More
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="detail_1.html"
+                            >Details</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Add To Cart</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 mt-3 mb-2">
+                <div class="card">
+                  <a
+                    href="img/Chinese/Tienguanyin.jpg"
+                    data-lightbox="kopi"
+                    data-title="Tienguanyin"
+                  >
+                    <img
+                      src="img/Chinese/Tienguanyin.jpg"
+                      class="card-img-top"
+                      alt="404"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-danger">
+                      <strong>Tienguanyin</strong>
+                    </h5>
+                    <p class="card-text text-center">
+                      Zǎo shang hǎo zhōng guó! Xiàn zài wǒ yǒu bing chilling Wǒ
+                      hěn xǐ huān bing chilling Dàn shì "sù dù yǔ jī qíng jiǔ"
+                      bǐ bing chilling
+                    </p>
+                    <h5 class="text-center text-danger mb-3">Rp.18.000</h5>
+                    <div class="dropdown">
+                      <a
+                        class="btn btn-produk dropdown-toggle w-100"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        More
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="detail_1.html"
+                            >Detail</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Add To Cart</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 mt-3 mb-2">
+                <div class="card">
+                  <a
+                    href="img/Chinese/baiju.jpg"
+                    data-lightbox="kopi"
+                    data-title="Baiju"
+                  >
+                    <img
+                      src="img/Chinese/baiju1.jpg"
+                      class="card-img-top"
+                      alt="404"
+                    />
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title text-center text-danger">
+                      <strong>Baiju</strong>
+                    </h5>
+                    <p class="card-text text-center">
+                      Zǎo shang hǎo zhōng guó! Xiàn zài wǒ yǒu bing chilling Wǒ
+                      hěn xǐ huān bing chilling Dàn shì "sù dù yǔ jī qíng jiǔ"
+                      bǐ bing chilling
+                    </p>
+                    <h5 class="text-center text-danger mb-3">Rp.18.000</h5>
+                    <div class="dropdown">
+                      <a
+                        class="btn btn-produk dropdown-toggle w-100"
+                        href="#"
+                        role="button"
+                        id="dropdownMenuLink"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        More
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuLink"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="detail_1.html"
+                            >Details</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Add To Cart</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pagination -->
+              <nav
+                class="mt-4 d-flex justify-content-center"
+                aria-label="Page navigation example"
+              >
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link btn-produk" href="#">Previous</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link btn-produk" href="#">1</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link btn-produk" href="#">2</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link btn-produk" href="#">3</a>
+                  </li>
+                  <li class="page-item">
+                    <a class="page-link btn-produk" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid bg-black footer text-light pt-5 mt-5 fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-start section-judul mb-4">Company</h4>
+            <a class="btn btn-link" href="">About Us</a>
+            <a class="btn btn-link" href="">Contact Us</a>
+            <a class="btn btn-link" href="">Reservation</a>
+            <a class="btn btn-link" href="">Privacy Policy</a>
+            <a class="btn btn-link" href="">Terms & Condition</a>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="text-start section-judul mb-4">Contact</h4>
+            <p class="mb-2">
+              <i class="fa fa-map-marker-alt me-3"></i>Buket Rata, Lhokseumawe
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-phone-alt me-3"></i>+62 845 6789 1290
+            </p>
+            <p class="mb-2">
+              <i class="fa fa-envelope me-3"></i>kelompok2@gmail.com
+            </p>
+            <div class="d-flex pt-2">
+              <a class="btn btn-outline-light btn-social text-light" href=""
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social text-light" href=""
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social text-light" href=""
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a class="btn btn-outline-light btn-social text-light" href=""
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="section-judul text-start mb-4">Opening</h4>
+            <h5 class="text-light">Monday - Saturday</h5>
+            <p>09AM - 08PM</p>
+            <h5 class="text-light">Sunday</h5>
+            <p>10AM - 11PM</p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h4 class="section-judul text-start mb-4">Newsletter</h4>
+            <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+              &copy;
+              <a class="text-light" style="text-decoration: none" href="#"
+                >Cina Punya</a
+              >
+              | Kelompok2
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-menu">
+                <a class="" href="index.html">Home</a>
+                <a class="" href="">Cookies</a>
+                <a class="" href="">Help</a>
+                <a class="" href="">FQAs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../dist/js/lightbox-plus-jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D"
+      crossorigin="anonymous"
+      async
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pesan</title>
+    <style>
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <a class="navbar-brand" href="#">Cafe<span> China</span>.</a>
+          <ul class="navbar-nav ms-auto d-flex gap-3">
+            <li class="nav-item me-3">
+              <a class="nav-link" aria-current="page" href="../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item dropdown me-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Product
+              </a>
+              <ul
+                class="dropdown-menu bg-black"
+                aria-labelledby="navbarDropdown"
+              >
+                <li>
+                  <a class="dropdown-item nav-link btn-nav" href="../makan.html"
+                    >Food</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item nav-link btn-nav" href="../minum.html"
+                    >Drink</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="../promo.html">Promo</a>
+            </li>
+            <li class="nav-item me-3">
+              <a
+                class="nav-link"
+                href="../keranjang.html"
+                tabindex="-1"
+                aria-disabled="true"
+                ><i class="bi bi-cart2"></i>Cart</a
+              >
+            </li>
+            <li class="nav-item me-3">
+              <a
+                class="nav-link"
+                href="../login.html"
+                tabindex="-1"
+                aria-disabled="true"
+                ><i class="bi bi-person-fill"></i>Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Form -->
+    <div class="container-fluid py-5 banner">
+      <div class="container text-light">
+        <h3 class="text-center mt-5">Pesan</h3>
+        <p class="text-center">Jangan Lupa Bayar</p>
+
+        <form class="col-md-6 offset-md-3">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nama"
+              placeholder="Masukan Nama"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="nama" class="form-label">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="Masukan Email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="nama" class="form-label">Alamat</label>
+            <textarea
+              class="form-control"
+              id="alamat"
+              placeholder="Masukan Alamat"
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="nama" class="form-label">Pesanan</label>
+            <input
+              type="text"
+              class="form-control"
+              id="pesanan"
+              placeholder="Masukan Pesanan"
+            />
+          </div>
+          <div>
+            <button class="btn bg-btn text-light w-100">Pesan</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- check -->
+    <form id="shippingForm">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required />
+      <br /><br />
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" required />
+      <br /><br />
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city" required />
+      <br /><br />
+      <label for="state">State:</label>
+      <input type="text" id="state" name="state" required />
+      <br /><br />
+      <label for="zipCode">ZIP Code:</label>
+      <input type="text" id="zipCode" name="zipCode" required />
+      <br /><br />
+      <input type="submit" value="Continue to Payment" />
+    </form>
+
+    <script>
+      // Handle form submission
+      const shippingForm = document.getElementById("shippingForm");
+      shippingForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        const fullName = document.getElementById("fullName").value;
+        const address = document.getElementById("address").value;
+        const city = document.getElementById("city").value;
+        const state = document.getElementById("state").value;
+        const zipCode = document.getElementById("zipCode").value;
+
+        // Add your code to process the shipping information
+        console.log("Full Name:", fullName);
+        console.log("Address:", address);
+        console.log("City:", city);
+        console.log("State:", state);
+        console.log("ZIP Code:", zipCode);
+
+        // Redirect to the payment page or perform any other necessary action
+        window.location.href = "payment.html";
+      });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
